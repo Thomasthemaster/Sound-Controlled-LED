@@ -1,4 +1,3 @@
-
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 
@@ -13,16 +12,16 @@ int ledState = 0;
 int soundMin;
 int soundMax;
 int soundRange;
-int soundThreshold = 130;
+int soundThreshold = 130; // change if you would like
 int digitalVal;
 
 void checkLED() {
-  if (soundRange >= soundThreshold && ledState == 0) {
+  if (soundRange >= soundThreshold && ledState == 0) { // if LED is currently off, turn ON
     digitalWrite(led, HIGH);
     ledState = 1;
     delay(smallDelay);
   }
-  else if (soundRange >= soundThreshold && ledState == 1) {
+  else if (soundRange >= soundThreshold && ledState == 1) { // if LED is currently on, turn OFF
     digitalWrite(led, LOW);
     ledState = 0;
     delay(smallDelay);
