@@ -1,4 +1,4 @@
-# Sound-Controlled-LED
+# Sound Controlled LED
 An Arduino-based sound-controlled LED system using a microphone sound sensor to detect changes in sound. When a change in sound is over a threshold, the LED will be toggled ON/OFF. 
 
 ---
@@ -13,7 +13,7 @@ When powered on, the sound sensor immediately starts picking up sound levels. It
 - **Software:** Arduino IDE
 
 ### Cool Features
-- **Sound-Controlled** LED- no switch or button
+- **Sound-Controlled** LED - no switch or button
 - Display for current LED status and range
 - Portability
 
